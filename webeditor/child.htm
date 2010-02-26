@@ -32,18 +32,18 @@
     <!--
 		BODY { margin: 10px; padding: 0; font: 1em "Trebuchet MS", verdana, arial, sans-serif; font-size: 100%; }
 		H1 { margin-bottom: 2px; font-family: Garamond, "Times New Roman", Times, Serif;}
-		DIV.container { margin: auto; width: 90%; margin-bottom: 10px;}
-		TEXTAREA { width: 80%;}
+		DIV.container { margin: auto; width: 95%; margin-bottom: 10px; height:100%;}
+		TEXTAREA { width: 100%; height:100%}
 		FIELDSET { border: 1px solid #ccc; padding: 1em; margin: 0; }
-		LEGEND { color: #ccc; font-size: 120%; }
-		INPUT, TEXTAREA { font-family: Arial, verdana; font-size: 125%; padding: 7px; border: 1px solid #999; }
+		LEGEND { color: #ccc; font-size: 120; }
+		INPUT, TEXTAREA { font-family: Arial, verdana; font-size: 100%; padding: 7px; border: 1px solid #999; }
 		LABEL { display: block; margin-top: 10px; }
 		IMG { margin: 5px; }
 
 		UL.tabNavigation {
 		    list-style: none;
 		    margin: 0;
-		    padding: 0;
+		    padding: 6px;
 		}
 
 		UL.tabNavigation LI {
@@ -61,7 +61,7 @@
 		UL.tabNavigation LI A:hover {
 		    background-color: #333;
 		    color: #fff;
-		    padding-top: 7px;
+		    padding: 6px;
 		}
 
 		UL.tabNavigation LI A:focus {
@@ -71,23 +71,20 @@
 		div.tabs > div {
 			padding: 5px;
 			margin-top: 3px;
-			border: 5px solid #333;
+      minheight: 100%
 		}
 
 		div.tabs > div h2 {
 			margin-top: 0;
 		}
 
-		#first {
+		#first, #second {
 		    background-color: #fff;
-		}
-
-		#second {
-		    background-color: #fff;
+        height:90%
 		}
 
 		.waste {
-			min-height: 100%;
+			min-height: 20%;
 		}
     -->
     </style>
@@ -110,17 +107,14 @@
 </head><body id="page">
     <div class="tabs">
         <ul class="tabNavigation">
-            <li><a class="selected" href="#first">First</a></li>
-            <li><a class="" href="#second">Second</a></li>
+            <li><a class="selected" href="#first">HTML</a></li>
+            <li><a class="" href="#second">CSS</a></li>
         </ul>
         <div style="display: block;" id="first">
-            <h2>First</h2>
-    <textarea rows="30" cols="50" id="htmltext">This is the html side</textarea>
+          <textarea rows="30" cols="50" id="htmltext">This is the html side</textarea>
         </div>
         <div style="display: none;" id="second">
-
-            <h2>Second</h2>
-    <textarea rows="30" cols="50" id="csstext">This is the css side</textarea>
+          <textarea rows="30" cols="50" id="csstext">This is the css side</textarea>
         </div>
 
     </div>
