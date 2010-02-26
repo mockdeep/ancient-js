@@ -20,73 +20,7 @@
 		    }).filter(':first').click();
 	    });
 	 </script>
-</head>
-
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
-
-
-    <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
-    <title>Tabs</title>
-    <style type="text/css" media="screen">
-    <!--
-		BODY { margin: 10px; padding: 0; font: 1em "Trebuchet MS", verdana, arial, sans-serif; font-size: 100%; }
-		H1 { margin-bottom: 2px; font-family: Garamond, "Times New Roman", Times, Serif;}
-		DIV.container { margin: auto; width: 95%; margin-bottom: 10px; height:100%;}
-		TEXTAREA { width: 100%; height:100%}
-		FIELDSET { padding: 1em; margin: 0; }
-		LEGEND { color: #ccc; font-size: 120; }
-		INPUT, TEXTAREA { font-family: Arial, verdana; font-size: 100%; padding: 7px; }
-		LABEL { display: block; margin-top: 10px; }
-		IMG { margin: 5px; }
-
-		UL.tabNavigation {
-		    list-style: none;
-		    margin: 0;
-		    padding: 6px;
-		}
-
-		UL.tabNavigation LI {
-		    display: inline;
-		}
-
-		UL.tabNavigation LI A {
-		    padding: 3px 5px;
-		    background-color: #ccc;
-		    color: #000;
-		    text-decoration: none;
-		}
-
-		UL.tabNavigation LI A.selected,
-		UL.tabNavigation LI A:hover {
-		    background-color: #333;
-		    color: #fff;
-		    padding: 6px;
-		}
-
-		UL.tabNavigation LI A:focus {
-			outline: 0;
-		}
-
-		div.tabs > div {
-			padding: 5px;
-      minheight: 100%
-		}
-
-		div.tabs > div h2 {
-			margin-top: 0;
-		}
-
-		#first, #second {
-        height:90%
-		}
-
-		.waste {
-			min-height: 20%;
-		}
-    -->
-    </style>
-
+  	<link rel="stylesheet" href="roark.css" type="text/css" media="all">
 	<script src="jquery.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript" charset="utf-8">
 		$(function () {
@@ -102,7 +36,8 @@
 			}).filter(':first').click();
 		});
 	</script>
-</head><body id="page">
+</head>
+<body id="page">
     <div class="tabs">
         <ul class="tabNavigation">
             <li><a class="selected" href="#first">HTML</a></li>
