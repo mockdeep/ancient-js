@@ -1,0 +1,70 @@
+Simple translation method
+
+Compile right away?
+    Pro - allows users to see mistakes
+    Con - becomes just a snippet tool
+
+One word - first three letters
+Two words - first three letters of 1st word, first letter of 2nd word
+
+Roark   | CSS
+
+:h      | hover
+a       | auto
+b       | block
+div     | div
+wid     | width
+h       | height
+top     | top
+lft     | left
+rht     | right
+cnt     | center
+abs     | absolute
+bk      | background
+bkc     | background-color
+bb      | border-bottom
+bl      | border-left
+br      | border-right
+bt      | border-top
+bor-t   | border-top
+bor-b   | border-bottom
+bor-l   | border-left
+bor-r   | border-right
+bot     | bottom
+curs-p  | cursor:pointer
+dis     | display
+--
+dis-n   | display:none
+fw      | font-weight
+flt     | float
+flt-l   | float:left
+flt-r   | float:right
+fon-s   | font-size
+lin-h   | line-height
+lis-s   | list-style
+mar-r   | margin-right
+mar-l   | margin-left
+mar-t   | margin-top
+mar-b   | margin-bottom
+pad-r   | padding-right
+pad-b   | padding-bottom
+pad-l   | padding-left
+pad-t   | padding-top
+tex-a   | text-align
+tex-t   | text-transform
+ovf     | overflow
+ovf-h   | overflow:hidden
+pos     | position
+pos-r   | position:relative
+upp     | uppercase
+dot     | dotted
+mar     | margin
+pad     | padding
+sol     | solid
+hide    | visibility:hidden
+max-w   | max-width
+min-w   | min-width
+max-h   | max-height
+min-h   | min-height
+trans   | transparent
+
