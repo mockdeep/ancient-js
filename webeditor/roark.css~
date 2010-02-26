@@ -10,6 +10,15 @@ body {
 	position: relative;
 }
 
+a:link, a:visited {
+	color: #dfdfdf;
+	text-decoration: underline;
+}
+a:active, a:hover {
+	color: white;
+	text-decoration: none;
+}
+
 #container {
 	position: relative;
 	padding-top: 1px;
