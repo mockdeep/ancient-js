@@ -5,43 +5,15 @@
     <title>Evil Child</title>
     <link rel="stylesheet" href="roark.css" type="text/css">
     <script type="text/javascript" src="combine.js"></script>
-    <script src="tabs_files/jquery.js" type="text/javascript" charset="utf-8"></script>
-    <script type="text/javascript" charset="utf-8">
-	    $(function () {
-		    var tabContainers = $('div.tabs > div');
-		    tabContainers.hide().filter(':first').show();
-
-		    $('div.tabs ul.tabNavigation a').click(function () {
-			    tabContainers.hide();
-			    tabContainers.filter(this.hash).show();
-			    $('div.tabs ul.tabNavigation a').removeClass('selected');
-			    $(this).addClass('selected');
-			    return false;
-		    }).filter(':first').click();
-	    });
-	 </script>
-  	<link rel="stylesheet" href="roark.css" type="text/css" media="all">
-	<script src="jquery.js" type="text/javascript" charset="utf-8"></script>
-	<script type="text/javascript" charset="utf-8">
-		$(function () {
-			var tabContainers = $('div.tabs > div');
-			tabContainers.hide().filter(':first').show();
-
-			$('div.tabs ul.tabNavigation a').click(function () {
-				tabContainers.hide();
-				tabContainers.filter(this.hash).show();
-				$('div.tabs ul.tabNavigation a').removeClass('selected');
-				$(this).addClass('selected');
-				return false;
-			}).filter(':first').click();
-		});
-	</script>
+    <script src="jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="tabs.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body id="page">
     <div class="tabs">
         <ul class="tabNavigation">
             <li><a class="selected" href="#first">HTML</a></li>
             <li><a class="" href="#second">CSS</a></li>
+            <li><a class="" href="#third">ROARK</a></li>
         </ul>
         <div style="display: block;" id="first">
           <textarea rows="30" cols="50" id="htmltext">This is the html side</textarea>
@@ -49,7 +21,9 @@
         <div style="display: none;" id="second">
           <textarea rows="30" cols="50" id="csstext">This is the css side</textarea>
         </div>
-
+        <div style="display: none;" id="third">
+          <textarea rows="30" cols="50" id="roarktext">This is the Roark side</textarea>
+        </div>
     </div>
 	<div class="waste"></div>
   <input value="falsefalse" id="_ilx_alertShown_" type="hidden"><div id="_ilx_updateIcon_"></div></body></html>

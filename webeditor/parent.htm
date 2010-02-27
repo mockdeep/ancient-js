@@ -2,23 +2,15 @@
 
 <html id="page">
 <head>
-    <title>Parent Window</title>
+    <title>Roark - Web designing made fun</title>
 	<link rel="stylesheet" href="roark.css" type="text/css" media="all">
     <style id="style"></style>
     <script language="JavaScript">
-      evilChild = window.open("child.htm", "evilChild", "height=500,width=800,resize=0");
+      evilChild = window.open("child.htm", "evilChild", "height=500,width=350,resize=0");
       evilChild.focus();
     </script>
     <script src="jquery.js" type="text/javascript" charset="utf-8"></script>
-    <script type="text/javaScript">
-      $(document).ready(function() {
-        $('div#nav> div').hide();
-        $('div#nav> h3').click(function() {
-       $(this).next('div').slideToggle('fast')
-       .siblings('div:visible').slideUp('fast');
-        });
-      });
-  </script>
+    <script src="parent_hide.js" type="text/javascript" charset="utf-8"></script>
 
 </head>
 <body id="body">

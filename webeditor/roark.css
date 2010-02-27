@@ -8,7 +8,7 @@ body {
 	padding: 0;
 	padding-bottom: 250px;
 	position: relative;
-    height:90%
+    height:95%
 }
 
 #container {
@@ -104,8 +104,8 @@ div.tabs > div h2 {
 	margin-top: 0;
 }
 
-#first, #second {
-height:90%
+#first, #second, #third {
+height:95%
 }
 
 .waste {
