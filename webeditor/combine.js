@@ -7,9 +7,7 @@ function setUp() {
 
 function handleKeyPress(e) {
   var key=e.keyCode || e.which;
-  if (key==13) {
-    opener.document.getElementById("style").innerHTML = document.getElementById("csstext").value;
-    opener.document.getElementById("body").innerHTML = document.getElementById("htmltext").value;
-    window.focus();
-  }
+  opener.document.getElementById("style").innerHTML = document.getElementById("csstext").value;
+  opener.document.getElementById("body").innerHTML = document.getElementById("htmltext").value;
+  window.focus();
 }
