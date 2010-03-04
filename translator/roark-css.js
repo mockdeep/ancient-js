@@ -9,6 +9,8 @@ var myHash = new Hash(
   'lft', 'left',
   'rht', 'right',
   'cnt', 'center',
+  'col', 'color',
+  'cent', 'center',
   'abs', 'absolute',
   'bk', 'background',
   'bkc', 'background-color',
@@ -24,6 +26,8 @@ var myHash = new Hash(
   'cursp', 'cursor:pointer',
   'dis', 'display',
   'disn', 'display:none',
+  'fontf', 'font-family',
+  'fonts', 'font-size',
   'fw', 'font-weight',
   'flt', 'float',
   'fltl', 'float:left',
@@ -56,4 +60,6 @@ var myHash = new Hash(
   'maxh', 'max-height',
   'minh', 'min-height',
   'trans', 'transparent'
+  'texta', 'text-align'
 );
+
