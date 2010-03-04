@@ -4,7 +4,6 @@ function setUp() {
   document.getElementById("csstext").onkeydown=handleKeyPress;
   document.getElementById("htmltext").onkeydown=handleKeyPress;
   document.getElementById("roarktext").onkeydown=roarkTranslate;
-  roarkTranslate();  
 }
 
 function handleKeyPress() {
