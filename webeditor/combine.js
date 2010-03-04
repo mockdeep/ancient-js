@@ -4,16 +4,15 @@ function setUp() {
   document.getElementById("csstext").onkeydown=handleKeyPress;
   document.getElementById("htmltext").onkeydown=handleKeyPress;
   document.getElementById("roarktext").onkeydown=roarkTranslate;
+  roarkTranslate();  
 }
 
-function handleKeyPress(e) {
-  var key=e.keyCode || e.which;
+function handleKeyPress() {
   opener.document.getElementById("style").innerHTML = document.getElementById("csstext").value;
   opener.document.getElementById("body").innerHTML = document.getElementById("htmltext").value;
-  window.focus();
 }
 
-function roarkTranslate(e) {
+function roarkTranslate() {
   var myRoark = document.getElementById("roarktext").value;
   var myStrings = myRoark.split('\n');
   var myCSS = '';
@@ -36,6 +35,9 @@ function roarkTranslate(e) {
       myCSS += myArray[0] + ':' + myArray[1] + ';\n';
     }
   }
+  if ( !blank ) {
+    myCSS += '}';
+  }
   document.getElementById("csstext").value = myCSS;
-  handleKeyPress(e);
+  handleKeyPress();
 }
