@@ -55,5 +55,5 @@ var myHash = new Hash(
   'minw', 'min-width',
   'maxh', 'max-height',
   'minh', 'min-height',
-  'trans', 'transparent',
+  'trans', 'transparent'
 );

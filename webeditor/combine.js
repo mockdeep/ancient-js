@@ -22,8 +22,8 @@ function roarkTranslate(e) {
     phrase = myStrings[i];
     var myArray = phrase.split(' ');
     var x = myHash.getItem(myArray[0]);
-    if ( blank && myArray[0] != "") {
-      myCSS += myArray[0] + ' {\n';
+    if ( blank && phrase != "") {
+      myCSS += phrase + ' {\n';
       blank = false;
     } else if ( blank ) {
       myCSS += '\n';
