@@ -4,9 +4,11 @@ function setUp() {
   document.getElementById("csstext").onkeydown=handleKeyPress;
   document.getElementById("htmltext").onkeydown=handleKeyPress;
   document.getElementById("roarktext").onkeydown=roarkTranslate;
-  document.getElementById("csstext").value = opener.document.getElementById("style").innerHTML;
-  document.getElementById("htmltext").value = opener.document.getElementById("body").innerHTML;
-  
+  document.getElementById("csstext").value = 
+      opener.document.getElementById("style").innerHTML;
+  document.getElementById("htmltext").value = 
+      opener.document.getElementById("body").innerHTML;
+  handleKeyPress();
 }
 
 function handleKeyPress() {
